@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--
   متجر الأناقة - Arabic Clothing E-commerce Store
   NEW: Direct product links + Copy link button for sharing in ads and campaigns
@@ -367,11 +367,11 @@ footer p{font-size:14px;line-height:1.8}
 <!-- ================= FOOTER ================= -->
 <footer>
   <h3>متجر الأناقة</h3>
-  <p>© 2026 جميع الحقوق محفوظة | للتواصل: info@elegance.ma | الدفع بالدرهم المغربي 🇲🇦</p>
+  <p>© 2026 جميع الحقوق محفوظة | للتواصل: | الدفع بالدرهم المغربي 🇲🇦</p>
 </footer>
 
 <!-- ================= DOWNLOAD BUTTON ================= -->
-<button class="dl-btn" onclick="downloadHTML()">⬇ تحميل الصفحة</button>
+
 
 <script>
 /* =====================================================================
@@ -658,7 +658,7 @@ function closeModal() {
 }
 function showView() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 function toast(msg, type) { const t = document.createElement('div'); t.className = 'toast ' + (type || ''); t.textContent = msg; document.body.appendChild(t); setTimeout(() => t.remove(), 2800); }
-function downloadHTML() { const blob = new Blob(['<!DOCTYPE html>\n' + document.documentElement.outerHTML], { type: 'text/html' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'store.html'; a.click(); toast('تم تحميل الصفحة', 'success'); }
+
 
 async function init() { 
   await loadInquiryPhones(); 
